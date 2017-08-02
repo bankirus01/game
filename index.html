@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		@keyframes io{
+			100%{
+				opacity: 0;
+			}
+		}
+
+		.chat_message{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100px;
+			height: 40px;
+			background-color: rgba(20,20,20,0.5);
+
+			animation-name: io;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;		
+		}
+		table{
+			border-collapse: collapse;
+		}
+		td{
+			width: 20px;
+			height: 20px;
+			border: 1px solid black;
+
+			text-align: center;
+		}
+		#log{
+			display: flex;
+			flex-direction: column-reverse;
+
+		}
+	</style>
+</head>
+<body id='body'>
+	<table id='game' ></table>
+	<div id='log'></div>
+	<script src='main.js'></script>
+</body>
+</html>
